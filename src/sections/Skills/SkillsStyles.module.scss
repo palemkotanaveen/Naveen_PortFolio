@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: var(--project-card-bg);
+    transform: translateX(-50%);
+     opacity: 0.9;
+  }
+}
+
+.skillCard {
+  position: relative;
+  background-color: var(--project-card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  color:var(--btn-text-color);
+  text-align: center;
+  width: 300px;
+  height: 150px;
+
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    width: 28px;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+      color:var(--btn-text-color);
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    opacity: 0.9;
+     color:var(--btn-text-color);
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.cardLeft {
+  align-self: flex-start;
+  margin-right: auto;
+
+  &::after {
+   content: "";
+    position: absolute;
+    top: 50%;
+    right: -97px;
+    transform: translateY(-50%);
+    width: 96px;
+    border-top: 3px Dashed var(--text-color);
+  }
+}
+
+.cardRight {
+  align-self: flex-end;
+  margin-left: auto;
+   &::after {
+   content: "";
+    position: absolute;
+    top: 50%;
+    left: -97px;
+    transform: translateY(-50%);
+    width: 96px;
+    border-top: 3px Dashed var(--text-color);
+  }
+}
+
+@media (max-width: 700px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .skillCard {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .cardLeft,
+  .cardRight {
+    align-self: center;
+    margin: 0 auto;
+  }
+}

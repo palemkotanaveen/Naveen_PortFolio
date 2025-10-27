@@ -1,0 +1,163 @@
+.container {
+  // background: url('/assets/cityscape-dark.jpg') center/cover no-repeat;
+  padding: 2rem 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--project-card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 1000px;
+  width: 100%;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.contactInfo {
+  flex: 1;
+  color: var(--btn-text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  p{
+    color: var(--btn-text-color);
+  }
+}
+
+.btn{
+    background-color: var(--btn-text-color);
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--btn-text-color);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--btn-text-color);
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 18px;
+}
+
+.infoItem i {
+  font-size: 24px;
+  color: #00bcd4;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  >div{
+    width: 400px;
+  }
+}
+
+textarea,
+input:not([type='submit']) {
+  height: 50px;
+  padding: 16px;
+  width: 100%;
+  max-width: 250px;
+  font-size: 16px;
+}
+
+textarea {
+  padding-top: 16px;
+  resize: vertical;
+  min-height: 150px;
+}
+
+input,
+textarea {
+  border-radius: 20px;
+  border: 1px solid #888;
+  box-sizing: border-box;
+color: var(--btn-text-color);
+}
+
+::placeholder {
+  color: #666;
+}
+
+input[type='submit'] {
+  background-color: var(--btn-text-color);
+  color: var(--btn-color);
+  border: none;
+  border-radius: 20px;
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  margin: auto;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  transform: scale(1.05);
+}
+
+input[type='submit']:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.status {
+  font-weight: bold;
+  margin-top: 1rem;
+  animation: fadeInUp 0.5s ease-out;
+  color: #28a745;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 800px) {
+  textarea,
+  input:not([type='submit']) {
+    max-width: 600px;
+    font-size: 18px;
+  }
+
+  form {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  textarea,
+  input:not([type='submit']) {
+    max-width: 800px;
+  }
+}

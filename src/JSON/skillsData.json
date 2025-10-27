@@ -1,0 +1,47 @@
+[
+  {
+    "name": "React",
+    "description": "JavaScript library for building fast, interactive user interfaces.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "name": "React Native",
+    "description": "Used to develop cross-platform mobile applications with JavaScript and React.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "name": "JavaScript",
+    "description": "Core programming language of the web, enabling dynamic and interactive functionality.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  },
+  {
+    "name": "HTML",
+    "description": "Markup language for structuring and displaying content on the web.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+  },
+  {
+    "name": "CSS",
+    "description": "Stylesheet language for creating visually appealing and responsive web layouts.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+  },
+  {
+    "name": "SCSS",
+    "description": "CSS preprocessor adding variables, nesting, and mixins for cleaner styling.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+  },
+  {
+    "name": "Bootstrap",
+    "description": "Front-end framework for developing responsive, mobile-first web projects quickly.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+  },
+  {
+    "name": "Redux",
+    "description": "State management library for predictable and centralized data flow in React apps.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+  },
+  {
+    "name": "Git",
+    "description": "Version control system for tracking code changes and enabling team collaboration.",
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+  }
+]
